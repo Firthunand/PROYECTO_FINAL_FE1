@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #242E52;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*ESTILOS DEL HEADER Y BARRA DE NAVEGACION*/
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4.5rem 1rem;
+}
+
+.header-container img {
+    margin-left: 10rem;
+
+}
+
+.header-container i {
+    display: none;
+}
+
+.header-container a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.lista-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #242E52;
+
+}
+
+.lista-container a:last-child {
+    padding: 0.9rem 0.7rem;
+    padding-right: 3rem;
+    border-radius: 1.5rem;
+    margin-left: 25rem;
+    margin-right: 15rem;
+    box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+}
+
+.lista-container a:last-child:hover {
+    background-color: #8B48BF;
+    color: #ffff;
+}
+
+.lista-container li {
+    margin-left: 2.5rem;
+}
+
+.lista-container li:hover {
+    opacity: 0.6;
+
+}
+
+/*MEDIA QUERIES HEADER*/
+@media (max-width: 480px) {
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 4rem 1rem;
+    }
+
+    .header-container img {
+        display: flex;
+        margin-left: 0;
+        padding: 0;
+        margin-left: 2rem;
+    }
+
+    .header-container i {
+        display: flex;
+        margin: 0;
+        margin-right: 2.5rem;
+        padding: 0;
+    }
+
+    .lista-container {
+        display: none;
+
+    }
+}
+
+/*------------------------------------------------*/
+/*-----------FIN ESTILOS DEL HEADER---------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*-----------ESTILOS DE LA PORTADA---------------*/
+/*------------------------------------------------*/
+
+.portada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-jugador img {
+    width: 35vw;
+    margin-left: 5rem;
+
+}
+
+.texto-portada {
+    text-align: right;
+    width: 30vw;
+    margin-right: 10rem;
+    font-size: 3rem;
+}
+
+.texto-portada p {
+    font-size: 1.3rem;
+}
+
+.texto-portada a {
+    text-decoration: none;
+    background-color: #8B48BF;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+    font-size: 0.8rem;
+    box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+}
+
+/*MEDIA QUERIES PORTADA*/
+@media (max-width: 480px) {
+
+    .portada {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-jugador img {
+        width: 80vw;
+        margin: 1rem;
+
+    }
+
+    .texto-portada {
+        width: 80vw;
+        margin: 1rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .texto-portada p {
+        font-size: 1rem;
+        line-height: 26.01px;
+        margin-top: 1rem;
+    }
+
+    .texto-portada a {
+        margin-right: 0;
+        margin-bottom: 5rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+/*------------------------------------------------*/
+/*-----------FIN ESTILOS DE LA PORTADA---------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*-----------ESTILOS DE LA FRANJA 1---------------*/
+/*------------------------------------------------*/
+.franja-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #8B48BF;
+    color: #ffff;
+    margin-top: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.franja-1 h2 {
+    width: 50vw;
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 5rem;
+}
+
+.franja-1 p {
+    width: 50vw;
+    margin-left: 15rem;
+    margin-right: 28rem;
+}
+
+/*MEDIA QUERIES FRANJA 1*/
+@media (max-width: 480px) {
+    .franja-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #3CDDF3;
+        color: #ffff;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .franja-1 h2 {
+
+        font-size: 1.7rem;
+        margin-left: 1rem;
+        margin-right: 15rem;
+    }
+
+    .franja-1 p {
+        font-size: 1rem;
+        width: 100vw;
+        margin: 1rem;
+        margin-top: 2rem
+    }
+
+
+}
+
+/*------------------------------------------------*/
+/*-----------FIN ESTILOS DE LA FRANJA 1---------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*-----------ESTILOS RESEÑAS ---------------*/
+/*------------------------------------------------*/
+.reseñas {
+    background-color: #F5F5F5;
+    padding-left: 10rem;
+
+}
+
+.reseñas article {
+    display: inline-block;
+    margin: 2.5rem 0 1rem 1rem;
+    width: 40vw;
+}
+
+.reseñas article:last-child {
+    margin: 1rem 0 1rem 25rem;
+}
+
+.cuerpo-reseña {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cuerpo-reseña span {
+    background-color: #8B48BF;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-right: 2rem;
+}
+
+.cuerpo-reseña h3 {
+    color: #323851;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+.reseñas article p {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.1rem 10rem 1rem 5rem;
+    font-size: 1.1rem;
+    color: #B3B2B7;
+}
+
+/*MEDIA QUERIES RESEÑAS*/
+@media (max-width: 480px) {
+    .reseñas {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F5F5;
+        padding: 1rem 0;
+        text-align: left;
+
+    }
+
+    .reseñas article {
+        display: block;
+        margin-left: 5rem;
+        width: 100vw;
+    }
+
+    .reseñas article:last-child {
+        margin-left: 5rem;
+    }
+
+    .cuerpo-reseña {
+        width: 91.5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+        padding: 0rem;
+        background-color: rgba(139, 72, 191, 0.3);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .cuerpo-reseña span {
+        background-color: #8B48BF;
+        color: #fff;
+        border-radius: 1rem;
+        padding: 0.5rem 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .cuerpo-reseña h3 {
+        color: #323851;
+        font-size: 1rem;
+
+    }
+
+    .reseñas article p {
+        width:78.5vw;
+        line-height: 1.5rem;
+        padding: 1.5rem 0rem;
+        padding-right: 5rem;
+        margin: 1rem 1rem 1rem 1rem;
+        font-size: 0.9rem;
+        color: #B3B2B7;
+    }
+}
+
+/*------------------------------------------------*/
+/*-----------FIN ESTILOS RESEÑAS ---------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*-----------ESTILOS MEJOR DEL MES ---------------*/
+/*------------------------------------------------*/
+.mejorDelMes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mejorDelMes h2 {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+}
+
+.mejorDelMes a {
+    text-decoration: none;
+    background-color: #8B48BF;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+    font-size: 0.8rem;
+    box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+}
+
+.mejorDelMes a:hover {
+    opacity: 0.7;
+}
+
+.seccionJugadores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.seccionJugadores article {
+    text-align: center;
+}
+
+.seccionJugadores article img {
+    position: relative;
+    top: 2rem;
+
+}
+
+.texto-reseña {
+    background-color: #F5F5F5;
+    padding: 2rem 3rem 2rem;
+    font-size: 1rem;
+}
+
+.texto-reseña p {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    color: #B3B2B7;
+    font-size: 1rem;
+}
+
+/*MEDIA QUERIES MEJOR DEL MES*/
+@media (max-width: 480px) {
+    .mejorDelMes {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mejorDelMes h2 {
+        margin-top: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .mejorDelMes a {
+        margin-bottom: 5rem;
+        margin-left: 3rem;
+    }
+
+    .seccionJugadores {
+        margin: 1rem;
+    }
+
+    .seccionJugadores article:nth-child(2n+1) {
+        display: none;
+    }
+
+    .seccionJugadores article img {
+        position: relative;
+        top: 2rem;
+
+    }
+
+    .texto-reseña {
+        padding-top: 3rem;
+        font-size: 1rem;
+    }
+
+    .texto-reseña p {
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-align: left;
+        color: #B3B2B7;
+        font-size: 1rem;
+    }
+
+}
+
+/*------------------------------------------------*/
+/*-----------FIN ESTILOS MEJOR DEL MES ---------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*-----------ESTILOS DE LA FRANJA 2---------------*/
+/*------------------------------------------------*/
+.franja-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B48BF;
+    color: #ffff;
+    margin-top: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.franja-2 h2 {
+    width: 25vw;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-left: 15rem;
+    margin-right: 25rem;
+}
+
+.franja-2 a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    margin-right: 18rem;
+    font-size: 0.8rem;
+    box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 13px 22px 1px rgba(0, 0, 0, 0.75);
+}
+
+/*MEDIA QUERIES FRANJA 2*/
+@media (max-width: 480px) {
+    .franja-2 {
+        flex-direction: column;
+        background-color: #3CDDF3;
+        color: #ffff;
+        text-align: center;
+        
+    }
+
+    .franja-2 h2 {
+        width: 60vw;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .franja-2 a {
+        text-align: center;
+        text-decoration: none;
+        background-color: #fff;
+        margin-right: 0rem;
+        margin-top: 2rem;
+    }
+
+
+}
+
+/*------------------------------------------------*/
+/*-----------FIN ESTILOS DE LA FRANJA 2---------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*-----------ESTILOS DEL FOOTER---------------*/
+/*------------------------------------------------*/
+
+footer {
+    background-color: #1E1E26;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 4rem 0;
+}
+
+.icon-section {
+    margin-top: 3rem;
+}
+
+.icon-section img {
+    margin: 0.4rem;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-footer ul:first-child {
+    margin-right: 25rem;
+}
+
+.nav-footer li {
+    list-style: none;
+    margin: 1rem;
+}
+
+form {
+    margin-right: 10rem;
+}
+
+form input {
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
+}
+
+form label {
+    font-size: 0.7rem;
+    background-color: #8B48BF;
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
+}
+form h5{
+    margin-top:5rem;
+    margin-left: 5rem;
+    color: #8C8C94;
+}
+/*MEDIA QUERIES FRANJA 2*/
+@media (max-width: 480px) {
+    footer {
+        width: 100vw;
+        background-color: #1E1E26;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .icon-footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .logo-footer{
+        width:25vw;
+        margin-left: 8.5rem;
+        margin-bottom: 2rem;
+    }
+    .icon-section {
+        margin: 1rem;
+    }
+    
+    .icon-section img {
+        margin: 1.5rem;
+    }
+    
+    .nav-footer {
+        margin-top:3rem;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .nav-footer ul:first-child {
+        margin-right: 5rem;
+    }
+    
+    .nav-footer li {
+        list-style: none;
+        margin: 1.5rem;
+        font-size: 0.8rem;
+    }
+    
+    form {
+        margin-right: 0rem;
+    }
+    
+    form input {
+        border-radius: 1rem;
+        padding: 0.7rem 2rem;
+    }
+    
+    form label {
+        font-size: 0.7rem;
+        background-color: #8B48BF;
+        border-radius: 1rem;
+        padding: 0.7rem 1rem;
+    }
+    form h5{
+        display:none;
+    }
+    .contenido::after{
+        content: "Copyright 2020. All Rights Reserved";
+        color: #8C8C94;
+    }
+}
